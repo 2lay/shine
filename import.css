@@ -9,15 +9,15 @@
 }
 
 .theme-dark {
-    --custom-theme-base-color: #201b35;
+    --custom-theme-base-color: #000000;
     /* this is to basically trick every variable at once to follow styles becuase who's got time to style alldat */
-    --custom-theme-base-color-amount: 100%;
+    --custom-theme-base-color-amount: 0%;
     --custom-theme-text-color: color-mix(in oklab, var(--custom-theme-base-color), white 85%);
     --custom-theme-text-color-amount: 100%;
 }
 
 .theme-light {
-    --custom-theme-base-color: #d1caec;
+    --custom-theme-base-color: #ffffff;
     /* this is to basically trick every variable at once to follow styles becuase who's got time to style alldat */
     --custom-theme-base-color-amount: 100%;
     --custom-theme-text-color: color-mix(in oklab, var(--custom-theme-base-color), rgb(0, 0, 0) 85%);
@@ -120,6 +120,7 @@
     background-blend-mode: plus-lighter;
     box-shadow: 0 -0.5px 1px 0 rgba(255, 255, 255, 0.15) inset, 0 0.5px 1px 0 rgba(255, 255, 255, 0.30) inset, 0 1px 2px 0 rgba(255, 255, 255, 0.20) inset, 0 2px 12px 0 rgba(0, 0, 0, 0.20) !important;
     backdrop-filter: blur(8px) brightness(115%) saturate(150%) sepia(20%);
+    padding-right: 10px;
     border: 0px !important;
 }
 
@@ -157,7 +158,7 @@
     }
 
     &:not(:has(.typing_b88801))::before {
-        content: "no one is typing :(";
+   
         font-size: 14px;
         color: var(--interactive-normal);
         height: 14px;
@@ -195,14 +196,12 @@
     width: 52px;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.0);
-    background-image: url(https://blade04208.github.io/shine/src/marble.png) !important;
     background-size: 100%;
     transition: all 0.1s ease;
 
     &:not(.disabled__24af7) {
         border-radius: 99px;
         background-color: var(--brand-500);
-        background-image: url(https://blade04208.github.io/shine/src/marble-active.png) !important;
         background-size: 100%;
         box-shadow: 0px 0px 50px var(--brand-500);
         transition: all 0.1s ease;
@@ -342,19 +341,6 @@
         &.redGlow__67645>.contents__201d5>.lottieIcon__5eb9b {
             --__lottieIconColor: color-mix(in oklab, var(--status-danger), white 25%) !important;
         }
-    }
-}
-
-.title__85643 {
-
-    .icon_f34534,
-    >svg {
-        display: none;
-    }
-
-    .defaultColor__4bd52 {
-        font-weight: 700;
-        opacity: 0.5;
     }
 }
 
@@ -597,26 +583,8 @@ a.link__2ea32 {
     filter: drop-shadow(0 -0.5px 1px 0 rgba(0, 0, 0, 0.12) inset) drop-shadow(0 1px 1px 0 rgba(255, 255, 255, 0.48) inset);
 }
 
-.wrapper__6e9f8 {
-    border-radius: 50%;
 
-    .childWrapper__6e9f8 {
-        border-radius: 50%;
-        background-color: rgba(255, 255, 255, 0.0) !important;
-        background-image: url(https://blade04208.github.io/shine/src/marble.png) !important;
-        background-size: 100%;
-        transition: all 0.1s ease;
-    }
 
-    &.selected__6e9f8 .childWrapper__6e9f8 {
-        border-radius: 99px;
-        background-color: var(--brand-500);
-        background-image: url(https://blade04208.github.io/shine/src/marble-active.png) !important;
-        background-size: 100%;
-        box-shadow: 0px 0px 50px var(--brand-500);
-        transition: all 0.1s ease;
-    }
-}
 
 .tutorialContainer__1f388 .svg_cc5dd2>foreignObject {
     border-radius: 50%;
@@ -669,46 +637,6 @@ a.link__2ea32 {
     height: auto;
     /* max-height: 112px; */
 }
-
-.headerContent_f37cb1 {
-    display: flex;
-    justify-content: start;
-    align-content: end;
-    align-items: end;
-    gap: 16px;
-
-    .name_f37cb1 {
-        font-size: 28px;
-        order: 0;
-        margin-right: 0px;
-        flex: 0 1 auto;
-        display: inline-block;
-        width: min-content;
-        max-width: 100%;
-        white-space: wrap;
-        -webkit-line-clamp: 2;
-    }
-
-    .guildIconV2Container__85d16 {
-        display: inline-flex;
-        order: 1;
-        height: 32px;
-        align-items: center;
-
-        >div {
-            scale: 1.555555556;
-        }
-    }
-
-    .headerChildren_f37cb1 {
-        order: 2;
-        margin-left: auto;
-        display: flex;
-        min-height: 100%;
-        align-self: center;
-    }
-}
-
 
 .container_eff079 {
     flex-direction: column-reverse;
@@ -789,7 +717,6 @@ a.link__2ea32 {
         z-index: 2;
     }
 }
-
 .withAccentColor__60fa3 {
     background: color-mix(in srgb, var(--background-surface-high), var(--__accent-color) 10%);
 }
@@ -823,4 +750,52 @@ div:has(>.headerRow_f369db) {
 .user-profile-sidebar {
     background: transparent;
     border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.divider__5126c {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+
+/* folders */
+.folderPreviewWrapper__48112, .folderGroupBackground__48112, .childWrapper__6e9f8, . {
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.40), 0 1.5px 2px 0 rgba(255, 255, 255, 0.2) inset, 0 2px 4px 0 rgba(0, 0, 0, 0.10);
+}
+
+.wrapper_cc5dd2 {
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.40), 0 1.5px 2px 0 rgba(255, 255, 255, 0.2) inset, 0 2px 4px 0 rgba(0, 0, 0, 0.10);
+        border-radius: 14px !important;
+
+}
+
+.item__133bf, .actionButton_f8fa06 {
+    border-radius: 999px;
+    overflow: hidden;
+    gap: 0px;
+    background: rgba(255, 255, 255, 0.06);
+    /* box-shadow: 0 -1.5px 0.4px -1px rgba(255, 255, 255, 0.15) inset, 0 1.5px 0.75px -1px rgba(255, 255, 255, 0.30) inset; */
+    box-shadow: 0 -2px 0.75px -1px rgba(255, 255, 255, 0.15) inset, 0 1.5px 0.75px -1px rgba(255, 255, 255, 0.30) inset, 0 2px 12px 0 rgba(0, 0, 0, 0.20);
+}
+
+.actionButton_f8fa06 {
+    transition: background-color 150ms ease-in-out; /* Add this line */
+}
+
+.actionButton_f8fa06:hover {
+    background-color: rgba(255, 255, 255, 0.158);
+}
+
+* {
+        transition: background-color 180ms ease-in-out !important; /* Add this line */
+}
+
+.vc-ranb-button {
+    font-size: 0;
+    line-height: 0;
+    margin-top: 3px !important;
+}
+
+.vc-ranb-button::before {
+    content: "Read all";
+    font-size: 12px; 
 }
