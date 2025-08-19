@@ -1,15 +1,14 @@
 /**
  * @name Shine
- * @description Glossy, glassy theme based on a twitter design.
- * @author Blade0, Zeealeid
+ * @description Fork of Shine
+ * @author Blade0, Zeealeid, 2lay
  * @authorId 1124341362955919371
  * @version 1
- * @updateUrl https://blade04208.github.io/shine/shine.theme.css
- * @source https://github.com/Blade04208/shine
- * @invite KEcCnVuTV7
+ * @updateUrl https://2lay.github.io/shine/shine.theme.css
+ * @source https://github.com/2lay/shine
  */
 
- @import url(https://blade04208.github.io/shine/import.css);
+ @import url(https://2lay.github.io/shine/import.css);
  
  :root {
     --shine-gap: 8px;
